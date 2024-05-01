@@ -11,9 +11,7 @@ local wk = {
 
     local mappings = {
       e = { "<cmd>NvimTreeToggle<cr>", "Toggle NvimTree" },
-      g = { 
-        name = "Comment Options",
-      },
+      w = { name = "session" },
     }
 
     local opts = {
