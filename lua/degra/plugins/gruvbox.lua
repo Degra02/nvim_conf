@@ -1,7 +1,9 @@
 return {
-  "ellisonleao/gruvbox.nvim", 
-  priority = 1000, 
+  "ellisonleao/gruvbox.nvim",
+  priority = 1000,
+  name = "gruvbox",
   conifg = function()
-    -- vim.cmd([[colorscheme gruvbox]]) 
+    -- vim.o.background = "dark" -- or "light" for light mode
+    -- vim.cmd([[colorscheme gruvbox]])
   end,
 }

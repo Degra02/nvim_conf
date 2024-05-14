@@ -16,8 +16,18 @@ return {
         group_empty = true,
       },
       filters = {
-        dotfiles = true,
+        dotfiles = false,
+        git_ignored = false,
       },
+      git = {
+        enable = true,
+        show_on_dirs = true,
+        show_on_open_dirs = true,
+        disable_for_dirs = {},
+        timeout = 400,
+        cygwin_support = false,
+      },
+
     })
   end,
 }

@@ -36,7 +36,7 @@ return {
         keymap.set("n", "<leader>lt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
 
         opts.desc = "See available code actions"
-        keymap.set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
+        keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
 
         opts.desc = "Smart rename"
         keymap.set("n", "<leader>lr", vim.lsp.buf.rename, opts) -- smart rename
@@ -79,10 +79,8 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["rust_analyzer"] = function()
-        lspconfig["rust_analyzer"].setup({
-
-        })
+      ["clangd"] = function()
+        lspconfig["clangd"].setup({})
       end,
       ["lua_ls"] = function()
         -- configure lua server (with special settings)

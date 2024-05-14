@@ -5,7 +5,6 @@ return {
   },
   config = function()
     local mason = require("mason")
-    local mason_lspconfig = require("mason-lspconfig")
 
     mason.setup({
       ui = {
@@ -16,13 +15,5 @@ return {
         },
       },
     })
-
-    mason_lspconfig.setup({
-      ensure_installed = {
-        "rust_analyzer",
-      }
-    })
-
-
   end,
 }
