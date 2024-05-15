@@ -26,3 +26,24 @@ keymap.set({ "n", "v" }, "<leader>la", "<cmd>RustLsp codeAction<cr>", { desc = "
 keymap.set("n", "<leader>lle", "<cmd>RustLsp expandMacro<cr>", { desc = "Macro expand" })
 keymap.set("n", "<leader>lld", "<cmd>RustLsp externalDocs<cr>", { desc = "Open external documentation" })
 keymap.set("n", "<leader>llD", "<cmd>RustLsp debug<cr>", { desc = "Debug under cursor" })
+
+-- Keybindings
+
+-- start dapui
+local start_dapui = function()
+  require("dapui").setup()
+  require("dapui").open()
+end
+
+local terminate_dap = function()
+  require("dapui").close()
+  require("dap").terminate()
+end
+
+
+keymap.set("n", "<leader>bs", start_dapui, { desc = "Start dapui" })
+keymap.set("n", "<leader>bt", terminate_dap, { desc = "Terminate dap" })
+
+keymap.set("n", "<leader>bb", "<cmd>DapToggleBreakpoint<CR>")
+keymap.set("n", "<leader>bo", "<cmd>DapStepOver<CR>")
+keymap.set("n", "<leader>bc", "<cmd>DapContinue<CR>")
