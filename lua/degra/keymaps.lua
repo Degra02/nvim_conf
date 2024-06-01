@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
+keymap.set("i", "jk", "<esc>", { noremap = true, silent = true, desc = "jk to escape" })
 
 keymap.set("n", "<leader>h", ":nohl<cr>", { desc = "Clear search highlights" })
 

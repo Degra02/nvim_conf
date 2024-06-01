@@ -6,8 +6,8 @@ vim.g.rustaceanvim = {
   -- LSP configuration
   server = {
     on_attach = function(client, _bufnr)
-      local navic = require("nvim-navic")
-      navic.attach(client, bufnr)
+      -- local navic = require("nvim-navic")
+      -- navic.attach(client, bufnr)
 
       local keymap = vim.keymap
 
