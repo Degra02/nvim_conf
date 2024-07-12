@@ -28,6 +28,9 @@ keymap.set("n", "<leader>lle", "<cmd>RustLsp expandMacro<cr>", { desc = "Macro e
 keymap.set("n", "<leader>lld", "<cmd>RustLsp externalDocs<cr>", { desc = "Open external documentation" })
 keymap.set("n", "<leader>llD", "<cmd>RustLsp debug<cr>", { desc = "Debug under cursor" })
 
+-- gitui
+keymap.set("n", "<leader>gg", "<cmd>GitUi <cr>", { desc = "Open gitui" })
+
 -- Keybindings
 
 -- start dapui

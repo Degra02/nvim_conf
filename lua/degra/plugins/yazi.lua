@@ -4,7 +4,7 @@ return {
   keys = {
     -- 👇 in this section, choose your own keymappings!
     {
-      "<leader>fw",
+      "<leader>e",
       function()
         require("yazi").yazi()
       end,

@@ -1,0 +1,3 @@
+return {
+  'brneor/gitui.nvim'
+}

@@ -10,7 +10,7 @@ local wk = {
     wk.setup()
 
     local mappings = {
-      e = { "<cmd>NvimTreeToggle<cr>", "Toggle NvimTree" },
+      -- e = { "<cmd>NvimTreeToggle<cr>", "Toggle NvimTree" },
       w = { name = "session" },
     }
 
