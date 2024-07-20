@@ -47,6 +47,7 @@
   "todo-comments.nvim": { "branch": "main", "commit": "313b04e5b02d29ab9275c9295ff5e2b73921b0eb" },
   "vim-maximizer": { "branch": "master", "commit": "2e54952fe91e140a2e69f35f22131219fcd9c5f1" },
   "vim-tmux-navigator": { "branch": "master", "commit": "5b3c701686fb4e6629c100ed32e827edf8dad01e" },
+  "vim-zellij-navigator.nvim": { "branch": "main", "commit": "380d6d55d13fe60f91ac0c8303749c2c12fdc85a" },
   "vimtex": { "branch": "master", "commit": "fdb5618e05964e1cfcfd3bc1f2463ef3148ae8ff" },
   "which-key.nvim": { "branch": "main", "commit": "af4ded85542d40e190014c732fa051bdbf88be3d" },
   "yazi.nvim": { "branch": "master", "commit": "a75d2555b1ce76506a2513d785fd4cc7320a8e5e" }
