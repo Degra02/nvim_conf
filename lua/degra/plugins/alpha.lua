@@ -18,7 +18,6 @@ return {
 
     dashboard.section.buttons.val = {
       dashboard.button("n", "New File", "<cmd>ene<cr>"),
-      dashboard.button("SPC ee", "File Explorer", "<cmd>NvimTreeToggle<cr>"),
       dashboard.button("SPC ff", "Find File", "<cmd>Telescope find_files<cr>"),
       dashboard.button("SPC fg", "Grep String", "<cmd>Telescope live_grep<cr>"),
       dashboard.button("SPC wr", "Restore Session For Current Dir", "<cmd>SessionRestore<cr>"),

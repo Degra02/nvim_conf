@@ -10,15 +10,10 @@ local wk = {
     wk.setup()
 
     local mappings = {
-      -- e = { "<cmd>NvimTreeToggle<cr>", "Toggle NvimTree" },
-      w = { name = "session" },
+      { "<leader>w", group = "session" },
     }
 
-    local opts = {
-      prefix = "<leader>",
-    }
-
-    wk.register(mappings, opts)
+    wk.add(mappings)
 
   end,
   opts = {
