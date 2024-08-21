@@ -31,6 +31,9 @@ keymap.set("n", "<leader>llD", "<cmd>RustLsp debug<cr>", { desc = "Debug under c
 -- gitui
 keymap.set("n", "<leader>gg", "<cmd>GitUi <cr>", { desc = "Open gitui" })
 
+-- hop
+keymap.set("n", "<leader>hw", "<cmd>HopWord<cr>", { desc = "Hop word" })
+
 -- Keybindings
 
 -- start dapui
