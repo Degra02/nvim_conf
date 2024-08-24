@@ -5,11 +5,11 @@ return {
   config = function()
     require("copilot").setup({
       suggestion = {
-        enabled = false,
-        -- auto_trigger = true,
+        -- enabled = false,
+        auto_trigger = true,
         debounce = 100,
         keymap = {
-          accept = "<C-l>",
+          accept = "<C-y>",
         },
       },
       panel = { enabled = false },
@@ -19,12 +19,13 @@ return {
         c = true,
         cpp = true,
         tex = true,
-        css = true,
+        nix = true,
         go = true,
-        html = true,
-        javascript = true,
         lua = true,
         typescript = true,
+        javascript = true,
+        css = true,
+        html = true,
         ["*"] = false,
       },
       server_opts_overrides = {},
