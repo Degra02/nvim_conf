@@ -28,4 +28,6 @@ require("lazy").setup({
   }
 )
 
+
 vim.cmd("colorscheme gruvbox")
+
