@@ -7,7 +7,6 @@ return {
       suggestion = {
         -- enabled = false,
         auto_trigger = true,
-        debounce = 100,
         keymap = {
           accept = "<C-y>",
         },
@@ -28,7 +27,6 @@ return {
         html = true,
         ["*"] = false,
       },
-      server_opts_overrides = {},
     })
   end,
 }

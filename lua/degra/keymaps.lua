@@ -33,9 +33,10 @@ keymap.set("n", "<leader>gg", "<cmd>GitUi <cr>", { desc = "Open gitui" })
 
 -- hop
 keymap.set("n", "<leader>hw", "<cmd>HopWord<cr>", { desc = "Hop word" })
+keymap.set("n", "<leader>hp", "<cmd>HopPattern<cr>", { desc = "Hop pattern" })
+keymap.set("n", "<leader>hn", "<cmd>HopNodes<cr>", { desc = "Hop nodes" })
 
--- Keybindings
-
+-- dap
 -- start dapui
 local start_dapui = function()
   require("dapui").setup()

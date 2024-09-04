@@ -15,6 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   {import = "degra.plugins" },
   {import = "degra.plugins.lsp" },
+  {import = "degra.plugins.mini" },
   },
   {
     checker = {
@@ -26,3 +27,5 @@ require("lazy").setup({
     },
   }
 )
+
+vim.cmd("colorscheme gruvbox")

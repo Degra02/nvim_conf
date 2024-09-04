@@ -12,7 +12,7 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 
-opt.scrolloff = 8
+opt.scrolloff = 12
 
 -- search settings
 opt.ignorecase = true
@@ -21,8 +21,9 @@ opt.smartcase = true
 opt.cursorline = true
 
 opt.termguicolors = true
-opt.background = "dark"
 opt.signcolumn = "yes"
+
+opt.background = "dark"
 
 -- backspace
 opt.backspace = "indent,eol,start"
