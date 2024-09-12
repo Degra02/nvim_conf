@@ -5,6 +5,8 @@ local opt = vim.opt
 opt.relativenumber = true
 opt.number = true
 
+vim.cmd("set conceallevel=1")
+
 -- tabs & indent
 opt.tabstop = 2
 opt.softtabstop = 2

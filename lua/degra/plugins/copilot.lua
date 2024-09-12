@@ -25,6 +25,7 @@ return {
         javascript = true,
         css = true,
         html = true,
+        markdown = true,
         ["*"] = false,
       },
     })

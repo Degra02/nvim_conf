@@ -82,9 +82,9 @@ return {
       ["clangd"] = function()
         lspconfig["clangd"].setup({})
       end,
-      ["tsserver"] = function()
-        lspconfig["tsserver"].setup({})
-      end,
+      -- ["tsserver"] = function()
+      --   lspconfig["tsserver"].setup({})
+      -- end,
       ["lua_ls"] = function()
         -- configure lua server (with special settings)
         lspconfig["lua_ls"].setup({
