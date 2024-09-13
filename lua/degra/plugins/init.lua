@@ -5,4 +5,5 @@ return {
   "nvim-lua/plenary.nvim",
   "mfussenegger/nvim-dap",
   "stevearc/dressing.nvim",
+  'andweeb/presence.nvim',
 }
