@@ -1,5 +1,8 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
+-- inlay hints
+vim.lsp.inlay_hint.enable()
+
 local opt = vim.opt
 
 opt.relativenumber = true

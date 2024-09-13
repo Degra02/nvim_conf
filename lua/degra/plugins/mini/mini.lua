@@ -21,5 +21,15 @@ return {
         reindent_linewise = true,
       },
     })
+    require('mini.notify').setup({
+      lsp_progress = {
+        enable = true,
+        duration_last = 700,
+      },
+
+      window = {
+        winblend = 50,
+      }
+    })
   end,
 }
