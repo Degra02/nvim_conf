@@ -13,6 +13,7 @@ return {
     local cmp = require("cmp")
 
     local luasnip = require("luasnip")
+    luasnip.add_snippets('supercollider', require'scnvim.utils'.get_snippets())
 
     local lspkind = require("lspkind")
 

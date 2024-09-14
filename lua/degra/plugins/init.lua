@@ -6,4 +6,5 @@ return {
   "mfussenegger/nvim-dap",
   "stevearc/dressing.nvim",
   'andweeb/presence.nvim',
+  'madskjeldgaard/fzf-sc',
 }
