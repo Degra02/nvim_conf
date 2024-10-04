@@ -20,7 +20,6 @@ return {
       vim.cmd(string.format([[highlight Headline5Bg guifg=%s guibg=%s]], color_fg, color5_bg)),
       vim.cmd(string.format([[highlight Headline6Bg guifg=%s guibg=%s]], color_fg, color6_bg)),
 
-
       backgrounds = {
         'Headline1Bg',
         'Headline2Bg',
@@ -29,6 +28,14 @@ return {
         'Headline5Bg',
         'Headline6Bg',
       },
+    },
+
+    bullet = {
+      enabled = true,
+      icons = { '', '◆', '○', '◇' },
+      left_pad = 0,
+      right_pad = 1,
+      highlight = 'RenderMarkdownBullet',
     },
 
     checkbox = {
