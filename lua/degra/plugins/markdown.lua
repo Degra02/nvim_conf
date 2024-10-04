@@ -30,6 +30,17 @@ return {
         'Headline6Bg',
       },
     },
+
+    checkbox = {
+      checked = {
+        icon = "️✔️"
+      },
+      custom = {
+        todo = { raw = '[-]', rendered = '󰥔 ', highlight = 'RenderMarkdownTodo' },
+        span = { raw = '[~]', rendered = '〰️'},
+        critical = { raw = '[!]', rendered = '⚠️', highlight = 'DiagnosticWarn' },
+      },
+    },
   },
   name = 'render-markdown',
   dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
