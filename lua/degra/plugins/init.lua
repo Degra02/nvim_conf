@@ -7,4 +7,6 @@ return {
   "stevearc/dressing.nvim",
   'andweeb/presence.nvim',
   'madskjeldgaard/fzf-sc',
+  { "nvchad/volt", lazy = true },
+  { "nvchad/minty", lazy = true }
 }

@@ -36,6 +36,12 @@ keymap.set("n", "<leader>hw", "<cmd>HopWord<cr>", { desc = "Hop word" })
 keymap.set("n", "<leader>hp", "<cmd>HopPattern<cr>", { desc = "Hop pattern" })
 keymap.set("n", "<leader>hn", "<cmd>HopNodes<cr>", { desc = "Hop nodes" })
 
+-- Mini plugins
+keymap.set("n", "<leader>mt", "<cmd>lua MiniTrailspace.trim()<cr>", { desc = "Trim trailing spaces" })
+
+-- minty
+keymap.set("n", "<leader>mm", "<cmd>lua require('minty.huefy').open({ border = true }) <cr>", { desc = "Open minty" })
+
 -- dap
 -- start dapui
 local start_dapui = function()
@@ -55,3 +61,4 @@ keymap.set("n", "<leader>bt", terminate_dap, { desc = "Terminate dap" })
 keymap.set("n", "<leader>bb", "<cmd>DapToggleBreakpoint<CR>")
 keymap.set("n", "<leader>bo", "<cmd>DapStepOver<CR>")
 keymap.set("n", "<leader>bc", "<cmd>DapContinue<CR>")
+

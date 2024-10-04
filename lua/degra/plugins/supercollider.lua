@@ -1,12 +1,16 @@
 return {
-  'davidgranstrom/scnvim',
-  config = function ()
-    local scnvim = require 'scnvim'
-    local map = scnvim.map
-    local map_expr = scnvim.map_expr
+  {
+    'davidgranstrom/telescope-scdoc.nvim',
+  },
+  {
+    'davidgranstrom/scnvim',
+    config = function ()
+      local scnvim = require 'scnvim'
+      local map = scnvim.map
+      local map_expr = scnvim.map_expr
 
-    require('scnvim').setup({
-      keymaps = {
+      require('scnvim').setup({
+        keymaps = {
           ['<M-e>'] = map('editor.send_line', {'i', 'n'}),
           ['<C-e>'] = {
             map('editor.send_block', {'i', 'n'}),
@@ -21,22 +25,23 @@ return {
           ['<leader>sk'] = map('sclang.recompile'),
           ['<F1>'] = map_expr('s.boot'),
           ['<F2>'] = map_expr('s.meter'),
-      },
-      editor = {
-        highlight = {
-          color = 'IncSearch',
         },
-      },
-      postwin = {
-        float = {
-          enabled = true,
+        editor = {
+          highlight = {
+            color = 'IncSearch',
+          },
         },
-      },
-      extensions = {
-        ['fzf-sc'] = {
-          search_plugin = 'nvim-fzf',
+        postwin = {
+          float = {
+            enabled = true,
+          },
         },
-      },
-    })
-  end
+        extensions = {
+          ['fzf-sc'] = {
+            search_plugin = 'nvim-fzf',
+          },
+        },
+      })
+    end
+  }
 }
