@@ -35,7 +35,7 @@ local options = {
     tabufline = {
       enabled = false,
       lazyload = true,
-      order = { "treeOffset", "buffers", "tabs", "btns" },
+      order = { "treeOffset" }, -- "treeOffset" / "buffers" / "both"
       modules = nil,
     },
   },
@@ -91,6 +91,13 @@ local options = {
   },
 
   lsp = { signature = true },
+
+  colorify = {
+     enabled = true,
+     mode = "virtual", -- fg, bg, virtual
+     virt_text = "󱓻 ",
+     highlight = { hex = true, lspvars = true },
+   },
 
   cheatsheet = {
     theme = "grid", -- simple/grid
