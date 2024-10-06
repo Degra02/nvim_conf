@@ -10,6 +10,7 @@ return {
     "onsails/lspkind.nvim", -- vs-code like pictograms
   },
   config = function()
+    dofile(vim.g.base46_cache .. "cmp")
     local cmp = require("cmp")
 
     local luasnip = require("luasnip")
@@ -38,8 +39,6 @@ return {
         ["<C-e>"] = cmp.mapping.abort(), -- close completion window
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
       }),
-      window = {
-      },
       -- sources for autocompletion
       sources = cmp.config.sources({
         -- Copilot Source

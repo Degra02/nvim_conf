@@ -14,7 +14,7 @@ local options = {
     cmp = {
       icons = true,
       lspkind_text = true,
-      style = "flat_dark", -- default/flat_light/flat_dark/atom/atom_colored
+      style = "default", -- default/flat_light/flat_dark/atom/atom_colored
       format_colors = {
         tailwind = true,
       }
@@ -37,6 +37,43 @@ local options = {
       lazyload = true,
       order = { "treeOffset", "buffers", "tabs", "btns" },
       modules = nil,
+    },
+  },
+
+  nvdash = {
+    load_on_startup = true,
+    header = {
+      "           ▄ ▄                   ",
+      "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
+      "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
+      "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
+      "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
+      "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
+      "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
+      "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
+      "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
+      "                                 ",
+      "                                 ",
+      "                                 ",
+    },
+
+    buttons = {
+      { txt = "  Find File", keys = "Spc f f", cmd = "Telescope find_files" },
+      { txt = "󰈭  Find Word", keys = "Spc f g", cmd = "Telescope live_grep" },
+
+      { txt = "─", hl = "NvDashLazy", no_gap = true, rep = true },
+
+      {
+        txt = function()
+          local stats = require("lazy").stats()
+          local ms = math.floor(stats.startuptime) .. " ms"
+          return "  Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms
+        end,
+        hl = "NvDashLazy",
+        no_gap = true,
+      },
+
+      { txt = "─", hl = "NvDashLazy", no_gap = true, rep = true },
     },
   },
 

@@ -3,6 +3,7 @@ return {
   version = false,
   config = function()
     require('mini.trailspace').setup()
+    -- require('mini.completion').setup()
     -- require('mini.animate').setup()
     -- require('mini.diff').setup()
     require('mini.indentscope').setup(

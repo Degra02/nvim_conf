@@ -6,6 +6,7 @@ return {
     "windwp/nvim-ts-autotag",
   },
   config = function()
+    dofile(vim.g.base46_cache .. "treesitter")
     local treesitter = require("nvim-treesitter.configs")
     treesitter.setup({
       highlight = {

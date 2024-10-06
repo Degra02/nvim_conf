@@ -8,5 +8,6 @@ return {
   'andweeb/presence.nvim',
   'madskjeldgaard/fzf-sc',
   { "nvchad/volt", lazy = true },
-  { "nvchad/minty", lazy = true }
+  { "nvchad/minty", lazy = true },
+  'dstein64/vim-startuptime'
 }
