@@ -1,7 +1,7 @@
 local options = {
 
   base46 = {
-    theme = "chadracula-evondev",
+    theme = "nightlamp",
     hl_add = {},
     hl_override = {},
     integrations = {},
@@ -41,7 +41,7 @@ local options = {
   },
 
   nvdash = {
-    load_on_startup = true,
+    load_on_startup = false,
     header = {
       "           ▄ ▄                   ",
       "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",

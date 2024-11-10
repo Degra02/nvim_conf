@@ -14,6 +14,7 @@ return {
     "nvim-lua/plenary.nvim",
   },
   opts = {
+    ui = { enable = true },
     workspaces = {
       {
         name = "notes",

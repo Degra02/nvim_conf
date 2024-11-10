@@ -5,6 +5,8 @@ keymap.set("i", "jk", "<esc>", { noremap = true, silent = true, desc = "jk to es
 
 keymap.set("n", "<leader>h", ":nohl<cr>", { desc = "Clear search highlights" })
 
+keymap.set("v", "<Backspace>", "\"_d", { desc = "Delete without yanking" })
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split vertically" })
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split horizontally" })
@@ -38,6 +40,10 @@ keymap.set("n", "<leader>gb", "<cmd>GitBlameToggle<cr>", { desc = "Toggle git bl
 keymap.set("n", "<leader>hw", "<cmd>HopWord<cr>", { desc = "Hop word" })
 keymap.set("n", "<leader>hp", "<cmd>HopPattern<cr>", { desc = "Hop pattern" })
 keymap.set("n", "<leader>hn", "<cmd>HopNodes<cr>", { desc = "Hop nodes" })
+
+-- persistence
+-- load the session for the current directory
+vim.keymap.set("n", "<leader>qs", function() require("persistence").load() end, { desc = "Load session for current dir" })
 
 -- Mini plugins
 keymap.set("n", "<leader>mt", "<cmd>lua MiniTrailspace.trim()<cr>", { desc = "Trim trailing spaces" })
