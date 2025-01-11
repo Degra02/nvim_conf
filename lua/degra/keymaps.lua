@@ -24,6 +24,9 @@ keymap.set("i", "<C-j>", "<Down>", { desc = "Move down" })
 keymap.set("i", "<C-k>", "<Up>", { desc = "Move up" })
 keymap.set("i", "<C-l>", "<Right>", { desc = "Move right" })
 
+-- CopilotChat
+keymap.set("n", "<leader>cc", "<cmd>CopilotChatToggle<cr>", { desc = "Open CopilotChat" })
+
 -- rustucean
 keymap.set({ "n", "v" }, "<leader>la", "<cmd>RustLsp codeAction<cr>", { desc = "Code action" })
 keymap.set("n", "<leader>lle", "<cmd>RustLsp expandMacro<cr>", { desc = "Macro expand" })

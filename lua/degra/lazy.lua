@@ -39,4 +39,4 @@ require("lazy").setup({
    dofile(vim.g.base46_cache .. v)
  end
 
--- vim.cmd("colorscheme gruvbox")
+vim.cmd[[colorscheme dracula]]
