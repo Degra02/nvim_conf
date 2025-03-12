@@ -80,7 +80,16 @@ return {
         })
       end,
       ["clangd"] = function()
-        lspconfig["clangd"].setup({})
+        lspconfig["clangd"].setup({
+          cmd = { "clangd" },
+          root_dir = require'lspconfig'.util.root_pattern("Makefile", "compile_commands.json", "compile_flags.txt", ".git"),
+          flags = { -- Pass the necessary include directories
+            "--compile-args=-I/home/degra/coding/eCTF/msdk",
+            "--compile-args=-I/home/degra/coding/eCTF/msdk/Libraries/CMSIS/Include",
+            "--compile-args=-I/home/degra/coding/eCTF/msdk/Libraries",
+            "--compile-args=-I/home/degra/coding/eCTF/msdk/Examples/MAX78000",
+          },
+        })
       end,
       -- ["tsserver"] = function()
       --   lspconfig["tsserver"].setup({})

@@ -12,7 +12,8 @@ return {
   opts = {
     render_modes = {"n", "v", "i", "c"},
     heading = {
-      width = 'block',
+      width = 'full',
+      position = 'inline',
       -- vim.cmd(string.format([[highlight Headline1Bg guifg=%s guibg=%s]], color_fg, color1_bg)),
       -- vim.cmd(string.format([[highlight Headline2Bg guifg=%s guibg=%s]], color_fg, color2_bg)),
       -- vim.cmd(string.format([[highlight Headline3Bg guifg=%s guibg=%s]], color_fg, color3_bg)),

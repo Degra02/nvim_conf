@@ -23,6 +23,10 @@ return {
         "cpp",
       },
     })
+    -- Add custom filetypes
+    vim.filetype.add({
+      pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+    })
   end,
 
 }
